@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-action-cont {
+  background-color: lightgreen;
+  height: 3rem;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+.page-action {
+  width: 3.5rem;
+  height: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cell-prop-cont {
+  background-color: blanchedalmond;
+  height: 3rem;
+}
+
+.formula-action-cont {
+  background-color: aquamarine;
+  height: 2.5rem;
+}
+
+.grid-cont {
+  background-color: grey;
+  height: calc(100vh - 3rem - 2.5rem - 3rem - 3rem);
+}
+
+.sheet-action-cont {
+  background-color: red;
+  height: 3rem;
+}
