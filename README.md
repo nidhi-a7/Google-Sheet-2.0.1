@@ -20,7 +20,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/google-sheet-2.0.1.git
+   git clone https://github.com/nidhi-a7/google-sheet-2.0.1.git
    ```
 2. Navigate to the project directory:
    ```bash
