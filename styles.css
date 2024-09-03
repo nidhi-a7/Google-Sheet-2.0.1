@@ -8,7 +8,8 @@ body {
 }
 
 .page-action-cont {
-  background-color: lightgreen;
+  background-color: #218c74;
+  color: #ecf0f1;
   height: 3rem;
   display: flex;
   align-items: flex-end;
@@ -26,21 +27,139 @@ body {
 }
 
 .cell-prop-cont {
-  background-color: blanchedalmond;
+  background-color: #ecf0f1;
   height: 3rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cell-prop-cont>* {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.cell-prop-cont>select {
+  border: none;
+  outline: none;
+  padding: 0.2rem;
 }
 
 .formula-action-cont {
-  background-color: aquamarine;
-  height: 2.5rem;
+  background-color: #ecf0f1;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formula-action-cont>input {
+  border: none;
+  outline: none;
+}
+
+.address-bar {
+  width: 5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.formula-bar {
+  width: calc(100vw - 5rem);
+  height: 1.5rem;
 }
 
 .grid-cont {
-  background-color: grey;
-  height: calc(100vh - 3rem - 2.5rem - 3rem - 3rem);
+  height: calc(100vh - 3rem - 2rem - 3rem - 3rem);
+  position: relative;
+  background-color: #ecf0f1;
+  overflow: scroll;
+}
+
+.dummy-box {
+  width: 2rem;
+  height: 2rem;
+  background-color: #747d8c;
+  position: fixed;
+  z-index: 1;
+}
+
+.address-row-cont {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+}
+
+.address-row {
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border: 1px solid #dfe4ea;
+  padding-top: 0.4rem;
+}
+
+.address-col {
+  height: 2rem;
+  width: 5rem;
+  text-align: center;
+  border: 1px solid #dfe4ea;
+  padding-top: 0.4rem;
+}
+
+.address-col-cont {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 2rem;
+}
+
+.cells-cont {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.row-cont {
+  display: flex;
+}
+
+.cell {
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  outline: none;
 }
 
 .sheet-action-cont {
-  background-color: red;
+  background-color: #ecf0f1;
   height: 3rem;
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.sheet-action-cont>* {
+  display: inline-block;
+}
+
+.sheet-add-icon {
+  width: 2vw;
+}
+
+.sheet-folder-cont {
+  width: calc(100vw - 2vw);
+  height: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.sheet-folder {
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
