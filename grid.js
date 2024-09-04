@@ -25,6 +25,9 @@ for (let i = 0; i < rows; i++) {
     let cell = document.createElement("div");
     cell.setAttribute("class", "cell");
     cell.setAttribute("contenteditable", true);
+    //Attributes for cell and storage identification
+    cell.setAttribute("rid", i);
+    cell.setAttribute("cid", j);
     rowCont.appendChild(cell);
     adressDisplay(cell, i, j);
   }
@@ -38,3 +41,7 @@ function adressDisplay(cell, i, j) {
     addressBar.value = `${colID}${rowID}`;
   })
 }
+
+//by default click on first cell via DOM
+let firstCell = document.querySelector(".cell");
+firstCell.click();

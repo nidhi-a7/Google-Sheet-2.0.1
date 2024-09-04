@@ -39,10 +39,27 @@ body {
   margin-right: 1rem;
 }
 
+.cell-prop-cont>* :hover {
+  cursor: pointer;
+}
+
 .cell-prop-cont>select {
   border: none;
   outline: none;
   padding: 0.2rem;
+}
+
+.color-prop {
+  position: relative;
+}
+
+.color-prop>input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .formula-action-cont {
