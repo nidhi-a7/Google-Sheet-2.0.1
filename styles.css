@@ -39,7 +39,9 @@ body {
   margin-right: 1rem;
 }
 
-.cell-prop-cont>* :hover {
+.cell-prop-cont > span:hover,
+.cell-prop-cont > select:hover,
+.cell-prop-cont > div:hover {
   cursor: pointer;
 }
 
